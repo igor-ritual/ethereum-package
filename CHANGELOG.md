@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/kurtosis-tech/ethereum-package/compare/1.1.0...1.2.0) (2023-12-05)
+
+
+### Features
+
+* add nethermind verkle example file ([#379](https://github.com/kurtosis-tech/ethereum-package/issues/379)) ([244d1ee](https://github.com/kurtosis-tech/ethereum-package/commit/244d1ee981d64b10ae73ef302fefb854d1580d40))
+* allow 0 genesis delay ([#383](https://github.com/kurtosis-tech/ethereum-package/issues/383)) ([11c2693](https://github.com/kurtosis-tech/ethereum-package/commit/11c26939c53a6db0d8816254f6b7ac535535e754))
+* update ethereum-genesis-generator images ([#385](https://github.com/kurtosis-tech/ethereum-package/issues/385)) ([8959fc8](https://github.com/kurtosis-tech/ethereum-package/commit/8959fc80786c04200aecabcbbd426e47ead24ae4))
+
+
+### Bug Fixes
+
+* peering issue between lighthouse-teku on k8s ([#382](https://github.com/kurtosis-tech/ethereum-package/issues/382)) ([97a070b](https://github.com/kurtosis-tech/ethereum-package/commit/97a070b662e153404498dccb5b045f6e2ed510b0))
+
 ## [1.1.0](https://github.com/kurtosis-tech/ethereum-package/compare/1.0.0...1.1.0) (2023-11-30)
 
 
