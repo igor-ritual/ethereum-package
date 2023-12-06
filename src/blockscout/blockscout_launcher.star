@@ -41,7 +41,7 @@ def get_config(postgres_output, el_client_rpc_url):
         user=postgres_output.user,
         password=postgres_output.password,
         hostname=postgres_output.service.hostname,
-        port=postgres_output.port,
+        port=postgres_output.port.number,
         database=postgres_output.database,
     )
 
