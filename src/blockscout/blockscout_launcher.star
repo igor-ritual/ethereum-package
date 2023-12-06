@@ -21,7 +21,12 @@ def launch_blockscout(
     el_client_contexts,
 ):
     # https://github.com/kurtosis-tech/postgres-package/blob/main/main.star
-    postgres_output = postgres.run(plan, service_name="{}-postgres".format(SERVICE_NAME), database="blockscout")
+    postgres_output = postgres.run(
+        plan, 
+        service_name="{}-postgres".format(SERVICE_NAME), 
+        database="blockscout", 
+        extra_configs=["max_connections=1000"],
+    )
 
     el_client_context = el_client_contexts[0]
     el_client_rpc_url = "http://{}:{}/".format(el_client_context.ip_addr, el_client_context.rpc_port_num)    
