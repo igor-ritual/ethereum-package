@@ -20,6 +20,7 @@ el_forkmon = import_module("./src/el_forkmon/el_forkmon_launcher.star")
 beacon_metrics_gazer = import_module(
     "./src/beacon_metrics_gazer/beacon_metrics_gazer_launcher.star"
 )
+blockscout = import_module("./src/blockscout/blockscout_launcher.star")
 dora = import_module("./src/dora/dora_launcher.star")
 blobscan = import_module("./src/blobscan/blobscan_launcher.star")
 full_beaconchain_explorer = import_module(
@@ -327,6 +328,13 @@ def run(plan, args={}):
                 beacon_metrics_gazer_prometheus_metrics_job
             )
             plan.print("Successfully launched beacon metrics gazer")
+        elif additional_service == "blockscout":
+            plan.print("Launching blockscout")
+            blockscout.launch_blockscout(
+                plan,
+                all_el_client_contexts,
+            )
+            plan.print("Successfully launched dora")        
         elif additional_service == "dora":
             plan.print("Launching dora")
             dora_config_template = read_file(static_files.DORA_CONFIG_TEMPLATE_FILEPATH)

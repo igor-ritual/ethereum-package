@@ -51,6 +51,7 @@ additional_services:
   - blob_spammer
   - el_forkmon
   - beacon_metrics_gazer
+  - blockscout
   - dora
   - prometheus_grafana
 wait_for_finalization: false

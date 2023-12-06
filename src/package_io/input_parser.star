@@ -44,6 +44,7 @@ DEFAULT_ADDITIONAL_SERVICES = [
     "blob_spammer",
     "el_forkmon",
     "beacon_metrics_gazer",
+    "blockscout",
     "dora",
     "prometheus_grafana",
 ]
